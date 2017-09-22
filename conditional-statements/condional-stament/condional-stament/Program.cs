@@ -11,9 +11,11 @@ namespace condional_stament
         static void Main(string[] args)
         {
 
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             // define instructions
 
-            Console.WriteLine("Anna numero: ");
+            Console.WriteLine("Syötä numero: ");
 
             // define variables
 

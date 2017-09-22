@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace condional_stament
+namespace task2
 {
     class Program
     {
         static void Main(string[] args)
         {
-
             // define instructions
 
             Console.WriteLine("Anna numero: ");
@@ -26,26 +25,22 @@ namespace condional_stament
             // program logic
 
             if (isNumber == true)
-             {
+            {
 
-                    if (evaluatedNumber > 0)
-                    {
-                        Console.WriteLine($"Numero {evaluatedNumber} on positiivinen.");
-                    }
-                    else if (evaluatedNumber < 0)
-                    {
-                        Console.WriteLine($"Numero {evaluatedNumber} on negatiivinen.");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"Numero {evaluatedNumber} on nolla.");
-                    }
-
+                if (evaluatedNumber % 2 == 0)
+                {
+                    Console.WriteLine($"Numero {evaluatedNumber} on parillinen.");
                 }
                 else
                 {
-                    Console.WriteLine("Syötit muuta kuin numeroita");
+                    Console.WriteLine($"Numero {evaluatedNumber} on pariton.");
                 }
+            }
+            else
+            {
+                Console.WriteLine("Syötit muuta kuin numeroita");
+            }
+
             Console.ReadKey();
         }
     }

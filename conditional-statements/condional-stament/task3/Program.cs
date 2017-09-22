@@ -30,7 +30,7 @@ namespace task3
 
                 if (evaluatedNumber > 0)
                 {
-                    Console.Write($"Numero {evaluatedNumber} on positiivinen ja se on");
+                    Console.Write($"Numero {evaluatedNumber} on positiivinen ja se on");                
 
                     if (evaluatedNumber % 2 == 0)
                     {

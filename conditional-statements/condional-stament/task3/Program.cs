@@ -60,7 +60,7 @@ namespace task3
                 }
                 else
                 {
-                    Console.WriteLine($"Numero {evaluatedNumber} on nolla ja se on");
+                    Console.Write($"Numero {evaluatedNumber} on nolla ja se on");
                     Console.WriteLine(" parillinen.");
                 }
 

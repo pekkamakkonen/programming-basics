@@ -34,13 +34,14 @@ namespace task4
 
             int[] numbers = { luku1, luku2, luku3 };
 
+            Console.Write("Vastaus: ");
+
             Array.Sort(numbers);
             foreach (int number in numbers)
             {
                 Console.Write(number);
                 Console.Write(' ');
             }
-            Console.WriteLine();
             Console.ReadKey();
 
         }

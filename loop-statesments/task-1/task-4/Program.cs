@@ -14,22 +14,18 @@ namespace task_4
             int n;
             bool isNumber = int.TryParse(userInput, out n);
 
+            int x = 0;
+
             if (isNumber == true && n >= 1)
             {
-
-                int x = 0;
-
-                for (int i = 1; i <= n; i++)
+               for (int i = 1; i <= n; i++)
                     {
                         x = x + i;
                     }
                 Console.WriteLine($"Vastaus: {x}");
             }
-
             else if (isNumber == true && n <= 1)
             {
-                int x = 0;
-
                 for (int i = -1; i >= n; i--)
                 {
                         x = x + i;

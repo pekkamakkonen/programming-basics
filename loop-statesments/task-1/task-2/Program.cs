@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace task_1
+namespace task_2
 {
     class Program
     {
@@ -14,17 +14,18 @@ namespace task_1
             int n;
             bool isNumber = int.TryParse(userInput, out n);
 
-            if (isNumber == true && n >= 0) {
-
-                int x = 1;
+            if (isNumber == true && n >= 1)
+            {
+                int x = 0;
 
                 for (int i = 1; i <= n; i++)
                 {
-                    x = x * i; 
+                    x = x + i;
                 }
                 Console.WriteLine($"Vastaus: {x}");
             }
-            else {
+            else
+            {
                 Console.WriteLine("Määrittelemätön");
             }
             Console.ReadKey();

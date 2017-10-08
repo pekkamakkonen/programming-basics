@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace task_1
+namespace task_3
 {
     class Program
     {
@@ -14,17 +14,26 @@ namespace task_1
             int n;
             bool isNumber = int.TryParse(userInput, out n);
 
-            if (isNumber == true && n >= 0) {
-
-                int x = 1;
+            if (isNumber == true && n >= 1)
+            {
+                int pariton = 0;
+                int parillinen = 0;
 
                 for (int i = 1; i <= n; i++)
                 {
-                    x = x * i; 
+                    if (i % 2 != 0) {
+                        pariton = pariton + i;
+                    }
+                    if (i % 2 == 0)
+                    {
+                        parillinen = parillinen + i;
+                    }
                 }
-                Console.WriteLine($"Vastaus: {x}");
+                Console.WriteLine($"Parittomien summa: {pariton}");
+                Console.WriteLine($"Parillisten summa: {parillinen}");
             }
-            else {
+            else
+            {
                 Console.WriteLine("Määrittelemätön");
             }
             Console.ReadKey();

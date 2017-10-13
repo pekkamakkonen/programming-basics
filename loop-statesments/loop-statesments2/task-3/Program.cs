@@ -10,31 +10,33 @@ namespace task_3
 
             for (int laskuri = 0; laskuri < 4; laskuri++)
             {
-                Console.WriteLine("Rivi {0}:{1}", laskuri + 1, luvutListaan(rnd));
+                Console.WriteLine("Rivi {0}:{1}", laskuri + 1, LuvutListaan(rnd));
             }
             Console.ReadKey();
         }
-            static string luvutListaan(Random rnd)
-            {
-                int arpa = 0;
-                string msg = "";
-                for (int luku = 0; luku < 5; luku++)
+
+        static string LuvutListaan(Random rnd)
+        {
+            int arpa;
+            string msg = "";
+
+            for (int luku = 1; luku <= 5; luku++)
                 {
                     arpa = rnd.Next(51);
 
-                    if (luku < 4)
+                    if (luku < 5)
                     {
-                        msg += string.Format(" {0}, ", muotoileLuku(arpa));
+                        msg += string.Format(" {0}, ", MuotoileLuku(arpa));
                     }
                     else
                     {
-                    msg += string.Format(" {0} ", muotoileLuku(arpa));
+                    msg += string.Format(" {0} ", MuotoileLuku(arpa));
                     }
                 }
                 return msg;
             }
 
-            static string muotoileLuku(int x)
+            static string MuotoileLuku(int x)
             {
                 string erotin = "";
 

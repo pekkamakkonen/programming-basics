@@ -15,15 +15,15 @@ namespace task5
             {
                 luku = rnd.NextDouble();
 
-                if (luku <= 0.4)
+                if (luku <= 0.4) //Voitto
                 {
                     merkki = '1';
                 }
-                else if(luku <= 0.6)
+                else if(luku <= 0.6) //Tasapeli
                 {
                     merkki = 'x';
                 }
-                else
+                else //Tappio
                 {
                     merkki = '2';
                 }

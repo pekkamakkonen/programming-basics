@@ -59,7 +59,6 @@ namespace conditional_statement2
                         }
                     }
                 }
-
                 //Calculating Total Price
 
                 double totalPrice;

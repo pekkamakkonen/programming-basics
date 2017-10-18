@@ -22,7 +22,7 @@ namespace task_3
 
             for (int luku = 1; luku <= 5; luku++)
                 {
-                    arpa = rnd.Next(51);
+                    arpa = rnd.Next(1, 51);
 
                     if (luku < 5)
                     {

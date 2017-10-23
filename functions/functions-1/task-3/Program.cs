@@ -10,19 +10,30 @@ namespace task_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Syota luku valilta 1-20: ");
-            string userInput = Console.ReadLine();
-            int number = int.Parse(userInput);
-            Console.WriteLine(LuvunKelpoisuus(number));
+            Console.WriteLine(NumberFromRange(lowerBound, upperBound));
             Console.ReadKey();
         }
 
-        static string LuvunKelpoisuus (int number)
+        static int NumberFromRange (int lowerBound, int upperBound)
         {
+            int lowerBound = 1;
+            int upperBound = 20;
+
             do
             {
-                retNumber = numberFromRange(lowerBound, upperBound);
-            } while()
+                Console.WriteLine("Syota luku valilta 1-20: ");
+                string userInput = Console.ReadLine();
+                int number = int.Parse(userInput);
+                bool numberIsOkay = false;
+
+                if (number >= lowerBound && number <= upperBound)
+                {
+                    numberIsOkay = true;
+                }
+
+            } while (numberIsOkay == true);
+
+            return number;            
         }
     }
 }

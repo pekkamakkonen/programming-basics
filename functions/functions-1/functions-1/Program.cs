@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace functions_1
 {
@@ -9,21 +13,21 @@ namespace functions_1
             Console.WriteLine("Syota luku: ");
             string userInput = Console.ReadLine();
             int luku = int.Parse(userInput);
-            string tahdet;
-            tahdet = "";
-            Console.WriteLine(Tulostus(tahdet));
+            Console.WriteLine(Tulostus(luku));
             Console.ReadKey();
         }
 
-        static string Tulostus(string tahdet)
+        static string Tulostus(int luku)
         {
             char merkki = '*';
+            string tahdet;
+            tahdet = "";
 
-            for (int i = 1; i <= 20; i++)
+            for (int i = 1; i <= luku; i++)
             {
                 tahdet = tahdet + merkki;
             }
             return tahdet;
-        }        
+        }
     }
 }

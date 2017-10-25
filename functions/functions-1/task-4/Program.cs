@@ -10,10 +10,16 @@ namespace task_4
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(HaeNumerot());
+            Console.ReadKey();
+        }
 
+        static string HaeNumerot()
+        {
             int j;
             string userInput = "";
             int biggestNumber = 0;
+            string result = "";
             string lukujono = "";
 
             for (int i = 1; i <= 10; i++)
@@ -30,11 +36,12 @@ namespace task_4
                 }
 
                 lukujono = lukujono + " " + j;
-               
-            }
-            Console.WriteLine($"Syötit luvut { lukujono }. \n Suurin luku oli { biggestNumber }. ");
-            Console.ReadKey();
 
+            }
+
+            result = ($"Syötit luvut { lukujono }. \n Suurin luku oli { biggestNumber }. ");
+
+            return result;
         }
     }
 }

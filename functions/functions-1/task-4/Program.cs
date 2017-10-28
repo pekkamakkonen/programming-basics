@@ -19,6 +19,7 @@ namespace task_4
             int j;
             string userInput = "";
             int biggestNumber = 0;
+            int rowNumber = 0;
             string result = "";
             string lukujono = "";
 
@@ -33,13 +34,14 @@ namespace task_4
                 if (j > biggestNumber)
                 {
                     biggestNumber = j;
+                    rowNumber = i;
                 }
 
                 lukujono = lukujono + " " + j;
 
             }
 
-            result = ($"Syötit luvut { lukujono }. \n Suurin luku oli { biggestNumber }. ");
+            result = ($"Syötit luvut { lukujono }. \n Suurin { biggestNumber } oli { rowNumber }. luku.");
 
             return result;
         }

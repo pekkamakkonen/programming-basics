@@ -23,10 +23,8 @@ namespace lotto
 
             foreach (int number in numbers)
             {
-
                 Console.Write(number);
                 Console.Write(' ');
-
             }
             Console.ReadKey();
         }

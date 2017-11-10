@@ -10,23 +10,33 @@ namespace taulukko3
     {
         static void Main(string[] args)
         {
+            MuutettuLuku();
+            Console.ReadKey();
+        }
+
+        static string MuutettuLuku()
+        {
             Random rnd = new Random();
             int[] array = new int[10];
+            string tulostus = "";
 
             for (int i = 0; i <= 9; i++)
             {
                 array[i] = rnd.Next(0, 20);
+                int number = array[i];
+                string merkkijono = number.ToString();
 
                 if (array[i] < 10)
                 {
-                    Console.WriteLine($"0{ array[i] }");
+                    tulostus = 0 + merkkijono;
                 }
                 else
                 {
-                    Console.WriteLine(array[i]);
+                    tulostus = merkkijono;
                 }
+                Console.WriteLine(tulostus);
             }
-            Console.ReadKey();
+            return tulostus;
         }
     }
 }

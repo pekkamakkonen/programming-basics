@@ -7,15 +7,35 @@ namespace kertaus3
         static void Main(string[] args)
         {
 
-            int number;
+            int number = 0;
+            int number2 = 0;
+            int i = 0;
+            int sum = 0;
+
+            Console.WriteLine("Ohjelma kysyy käyttäjältä lukuja, kunnes hän syöttää kaksi samaa lukua peräkkäin.");
 
             do
             {
                 string userInput = Console.ReadLine();
-                number = int.Parse(userInput);
-                int[] numbers = 
 
-            } while (number != number);
+                if (i % 2 == 0)
+                {
+                    number = int.Parse(userInput);
+                    sum = sum + number;
+                }
+                else
+                {
+                    number2 = int.Parse(userInput);
+                    sum = sum + number2;
+                }
+                i++;
+
+            } while (number != number2);
+
+            Console.WriteLine($"Lukujen summa on: {sum}");
+            Console.ReadKey();
+
+
         }
     }
 }

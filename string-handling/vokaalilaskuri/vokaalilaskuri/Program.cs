@@ -17,7 +17,7 @@ namespace vokaalilaskuri
             {
                 if(x == 'A' || x == 'E' || x == 'I' || x == 'O' || x == 'U' || x == 'Y' || x == 'Ä' || x == 'Ö')
                 {
-                    vokaali = vokaali + 1;
+                    vokaali++;
                 }
             }
             Console.WriteLine($"Sanassa { userInput } on { vokaali } vokaalia");

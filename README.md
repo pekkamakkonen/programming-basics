@@ -1,2 +1,2 @@
 # programming-basics
-Programmin basics tasks
+- Programmin basics tasks
